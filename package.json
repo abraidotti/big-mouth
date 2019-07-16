@@ -4,13 +4,13 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "integration-test": "./node_modules/.bin/mocha tests/test_cases --reporter spec"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/abraidotti/big-mouth"
     },
-    "author": "Yan Cui",
+    "author": "Yan Cui / A Braidotti",
     "license": "ISC",
     "dependencies": {
         "aws4": "^1.8.0",
@@ -22,6 +22,11 @@
         "superagent-promise": "^1.1.0"
     },
     "devDependencies": {
-        "aws-sdk": "^2.493.0"
+        "aws-sdk": "^2.493.0",
+        "awscred": "^1.4.2",
+        "chai": "^4.2.0",
+        "cheerio": "^1.0.0-rc.3",
+        "lodash": "^4.17.14",
+        "mocha": "^6.1.4"
     }
 }

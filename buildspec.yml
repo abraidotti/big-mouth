@@ -6,7 +6,7 @@ phases:
       nodejs: 8
   build:
     commands:
-      - chmod +x build.sh
-      - ./build.sh int-test
-      - ./build.sh deploy dev
-      - ./build.sh acceptance-test
+      - chmod +x $CODEBUILD_SRC_DIR/build.sh
+      - $CODEBUILD_SRC_DIR/build.sh int-test
+      - $CODEBUILD_SRC_DIR/build.sh deploy dev
+      - $CODEBUILD_SRC_DIR/build.sh acceptance-test

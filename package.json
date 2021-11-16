@@ -23,7 +23,7 @@
         "superagent-promise": "^1.1.0"
     },
     "devDependencies": {
-        "aws-sdk": "^2.493.0",
+        "aws-sdk": "^2.814.0",
         "awscred": "^1.4.2",
         "chai": "^4.2.0",
         "chance": "^1.0.18",
